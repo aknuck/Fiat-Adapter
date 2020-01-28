@@ -1,5 +1,5 @@
 
-#FiatAdapter
+# FiatAdapter
 
 ![npm](https://img.shields.io/npm/v/fiat-adapter)
 
