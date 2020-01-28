@@ -14,6 +14,7 @@ import FiatAdapter from 'fiat-adapter';
   open={this.state.fiatAdapterOpen}
   onClose={() => this.setState({ fiatAdapterOpen: false })
 />
+```
 
 ## Customization
 
