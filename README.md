@@ -22,4 +22,3 @@ See here for customization options: <https://github.com/dolomite-exchange/Fiat-A
 
 Pass in your custom options as props to FiatAdapter
 
-```
