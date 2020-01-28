@@ -1,4 +1,8 @@
 
+#FiatAdapter
+
+![npm](https://img.shields.io/npm/v/fiat-adapter)
+
 ## Installation
 
 `$ npm install fiat-adapter`
