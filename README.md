@@ -18,7 +18,7 @@ import FiatAdapter from 'fiat-adapter';
 
 ## Customization
 
-See here for customization options: <https://github.com/dolomite-exchange/Fiat-Adapter>
+See here for customization options: <https://github.com/dolomite-exchange/Fiat-Adapter#Customization>
 
 Pass in your custom options as props to FiatAdapter
 
