@@ -41,7 +41,7 @@ const popover = {
   transform: 'translateY(-50%)',
   borderRadius: '10px',
   overflow: hidden,
-  background-color: white,
+  backgroundColor: white,
 };
 
 class FiatAdapter extends React.Component {
