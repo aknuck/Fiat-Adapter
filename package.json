@@ -1,6 +1,6 @@
 {
   "name": "fiat-adapter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This package makes it simple to integrate several gateways for purchasing crypto with fiat currency",
   "main": "build/index.js",
   "repository": {
