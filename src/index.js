@@ -41,6 +41,7 @@ const popover = {
   transform: 'translateY(-50%)',
   borderRadius: '10px',
   overflow: hidden,
+  background-color: white,
 };
 
 class FiatAdapter extends React.Component {
@@ -75,6 +76,10 @@ class FiatAdapter extends React.Component {
 
   hide() {
     this.props.onClose();
+  }
+
+  encodeList(l) {
+    return encodeURIComponent(JSON.stringify(l));
   }
 
   buildParams() {
@@ -122,52 +127,52 @@ class FiatAdapter extends React.Component {
       params += ('&u=' + encodeURIComponent(this.props.unsupportedDiv));
     }
     if (this.props.allowedProviders) {
-      params += ('&ap=' + encodeList(this.props.allowedProviders));
+      params += ('&ap=' + this.encodeList(this.props.allowedProviders));
     }
     if (this.props.blockedProviders) {
-      params += ('&bp=' + encodeList(this.props.blockedProviders));
+      params += ('&bp=' + this.encodeList(this.props.blockedProviders));
     }
     if (this.props.allowedMethods) {
-      params += ('&am=' + encodeList(this.props.allowedMethods));
+      params += ('&am=' + this.encodeList(this.props.allowedMethods));
     }
     if (this.props.blockedMethods) {
-      params += ('&bm=' + encodeList(this.props.blockedMethods));
+      params += ('&bm=' + this.encodeList(this.props.blockedMethods));
     }
     if (this.props.allowedCurrencies) {
-      params += ('&acu=' + encodeList(this.props.allowedCurrencies));
+      params += ('&acu=' + this.encodeList(this.props.allowedCurrencies));
     }
     if (this.props.blockedCurrencies) {
-      params += ('&bcu=' + encodeList(this.props.blockedCurrencies));
+      params += ('&bcu=' + this.encodeList(this.props.blockedCurrencies));
     }
     if (this.props.allowedCryptos) {
-      params += ('&acr=' + encodeList(this.props.allowedCryptos));
+      params += ('&acr=' + this.encodeList(this.props.allowedCryptos));
     }
     if (this.props.blockedCryptos) {
-      params += ('&bcr=' + encodeList(this.props.blockedCryptos));
+      params += ('&bcr=' + this.encodeList(this.props.blockedCryptos));
     }
     if (this.props.allowedRegions) {
-      params += ('&ar=' + encodeList(this.props.allowedRegions));
+      params += ('&ar=' + this.encodeList(this.props.allowedRegions));
     }
     if (this.props.blockedRegions) {
-      params += ('&br=' + encodeList(this.props.blockedRegions));
+      params += ('&br=' + this.encodeList(this.props.blockedRegions));
     }
     if (this.props.allowedRegions) {
-      params += ('&ar=' + encodeList(this.props.allowedRegions));
+      params += ('&ar=' + this.encodeList(this.props.allowedRegions));
     }
     if (this.props.blockedRegions) {
-      params += ('&br=' + encodeList(this.props.blockedRegions));
+      params += ('&br=' + this.encodeList(this.props.blockedRegions));
     }
     if (this.props.allowedStates) {
-      params += ('&as=' + encodeList(this.props.allowedStates));
+      params += ('&as=' + this.encodeList(this.props.allowedStates));
     }
     if (this.props.blockedStates) {
-      params += ('&bs=' + encodeList(this.props.blockedStates));
+      params += ('&bs=' + this.encodeList(this.props.blockedStates));
     }
     if (this.props.allowedProvinces) {
-      params += ('&apo=' + encodeList(this.props.allowedProvinces));
+      params += ('&apo=' + this.encodeList(this.props.allowedProvinces));
     }
     if (this.props.blockedProvinces) {
-      params += ('&bpo=' + encodeList(this.props.blockedProvinces));
+      params += ('&bpo=' + this.encodeList(this.props.blockedProvinces));
     }
     if (this.props.buyAllowed) {
       params += ('&ba=' + encodeURIComponent(this.props.buyAllowed));
@@ -176,7 +181,7 @@ class FiatAdapter extends React.Component {
       params += ('&sa=' + encodeURIComponent(this.props.sellAllowed));
     }
     if (this.props.customRegions) {
-      params += ('&cr=' + encodeList(this.props.customRegions));
+      params += ('&cr=' + this.encodeList(this.props.customRegions));
     }
     if (this.props.sortMethod) {
       params += ('&sm=' + encodeURIComponent(this.props.sortMethod));
